@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library1
 {
+    [Serializable]
     public struct Adress
     {
         public string City { get; set; }
@@ -18,11 +19,13 @@ namespace Library1
                 $"\n Place of residence: {Street},{NumOfBlock}, ap.{NumOfApartment}.";
         }
     }
+    [Serializable]
     public struct AccountData
     {
         public string Password { get; set; }
         public string Login { get; set; }
     }
+    [Serializable]
     public class Person
     {
         public string Name { get; set; }

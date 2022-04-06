@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Library1
 {
+    [Serializable]
     public class RepairMan : Employee
     {
         public bool IsFree { get; set; }
+        public List<string> PathsOfOrders { get; set; }
+
         public void DisplayRepairMan()
         {
             DisplayEmployee();
